@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  minimal:
+    image: jupyter/minimal-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./notebook:/home/jovyan/work"
+
+  scipy:
+    image: jupyter/scipy-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./notebook:/home/jovyan/work"
+      
