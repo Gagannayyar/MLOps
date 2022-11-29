@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  tf_jupyter:
+    image: tensorflow/tensorflow:1.14.0-py3-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./notebook/:/tf/notebooks"
+    
+
+
